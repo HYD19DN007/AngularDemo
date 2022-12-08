@@ -1,0 +1,11 @@
+<p>cbinding works!</p>
+<h1><div class="success">This is a sample </div></h1>
+
+<h1 [class]="result">You have scored {{marks}}</h1>
+<h1 [class.danger]="hasError" class="success">Message Displayed</h1>
+
+<h1 [ngClass]="messageClasses" class="success">Message Displayed</h1>
+<h1 [style.color]="C">Style Binding</h1>
+<h1 [style.color]="'red'">Style Binding</h1>
+<h1 [style.color]="hasError?'red':'green'">Style Binding</h1>
+<h1 [ngStyle]="titlestyles">Style Binding</h1>

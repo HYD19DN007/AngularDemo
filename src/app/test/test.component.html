@@ -1,0 +1,27 @@
+<p>test works!</p>
+{{childvalue}}
+
+<input #empno type="text">
+<button (click)="onclick(empno.value)">Click</button>
+<br>
+<input type="text" [(ngModel)]="ename">
+<button (click)="onsubmit()">Click1</button><br>
+{{name}}<br>
+{{name| lowercase}}<br>
+{{name | uppercase}}<br>
+{{name|titlecase}}
+{{person|json}}<br>
+{{date}}<br>
+{{date| date:'short'}}<br>
+{{date|date:'shortDate'}}<br>
+{{date|date:'shortTime'}}<br>
+<table class="table table-striped">
+    <tr><td>Id</td><td>Ename</td><td>Age</td></tr>
+    <tr *ngFor="let e of emps">
+        <td>{{e.id}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.age}}</td>
+    </tr>
+
+</table>
+

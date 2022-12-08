@@ -1,0 +1,15 @@
+<p>consumefile works!</p>
+<table class="table table-striped">
+    <tr><td>Id</td><td>Ename</td><td>Age</td></tr>
+    <tr *ngFor="let e of employees">
+        <td>{{e.id}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.age}}</td>
+    </tr>
+
+</table>
+<input type="text" [(ngModel)]="id">
+<button (click)="getById()">Click Here</button><br>
+Employee Id  :{{emp.id}}<br>
+Employee Name:{{emp.name}}<br>
+Employee Age :{{emp.age}}

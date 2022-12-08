@@ -1,0 +1,16 @@
+.success
+{
+    color:green;
+}
+.moderate
+{
+color:yellow;
+}
+.danger
+{
+    color:red;
+}
+.textSpecial
+{
+    font-style: italic;
+}

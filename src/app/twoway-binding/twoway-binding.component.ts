@@ -1,0 +1,22 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-twoway-binding',
+  templateUrl: './twoway-binding.component.html',
+  styleUrls: ['./twoway-binding.component.css']
+})
+export class TwowayBindingComponent implements OnInit {
+  public username="";
+  public password="";
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  getdetails()
+  {
+    alert(this.username + " "+ this.password);
+
+  }
+}

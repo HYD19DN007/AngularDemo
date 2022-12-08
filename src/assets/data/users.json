@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "userName": "aa",
+      "email": "gayatri.arisam@techwave.net",
+      "phone": "9848960044",
+      "topic": "Angular",
+      "timepreference": "Morning",
+      "transport": true,
+      "id": 1
+    },
+    {
+      "userName": "ab",
+      "email": "gayatri.arisam@techwave.net",
+      "phone": "9848960033",
+      "topic": "Angular",
+      "timepreference": "Morning",
+      "transport": false,
+      "id": 2
+    },
+    {
+      "userName": "Allaman",
+      "email": "Allaman@gmail.co.in",
+      "phone": "9848960033",
+      "topic": "Angular",
+      "timepreference": "Morning",
+      "transport": false,
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<p>structral-directives works!</p>
+<input type="text" hidden value="one"><br>
+<input type="text" value="Two"><br>
+
+<div *ngIf="display">
+    <input type="text" value="three">
+</div>
+
+<div *ngIf="display;else eb">
+    <h1>Techwave Consultancy</h1>
+</div>
+<ng-template #eb>
+    <h1>No company given</h1>
+</ng-template>
+
+<div *ngif="display;then  tb; else eb"></div>
+
+<ng-template #tb>
+    <h1>Techwave Consultancy</h1>
+</ng-template>
+
+<ng-template #eb>
+    <h1>No company given</h1>
+</ng-template>
+
+
+
+<div *ngIf="marks==100; then one; else two"></div>
+<ng-template #one>
+  <h1>Excellent</h1>
+</ng-template>
+
+<ng-template #two>
+  <ng-container *ngIf="marks>=80; else three">
+    <h1>Very Good</h1>
+</ng-container>
+</ng-template>
+
+<ng-template #three>
+  <ng-container *ngIf="marks >=70; else four">
+    <h1>Average</h1>
+</ng-container>
+</ng-template>
+
+<ng-template #four>
+  <h1>Needs Improvement</h1>
+</ng-template>
+
+<div [ngSwitch]="clr">
+    <div *ngSwitchCase="'red'" [style.color]="clr">You have picked red color</div>
+    <div *ngSwitchCase="'blue'" [style.color]="clr">You have picked blue color</div>
+    <div *ngSwitchCase="'green'" [style.color]="clr">You have picked green color</div>
+    <div *ngSwitchDefault [style.color]="clr">You picked no color</div>
+</div>
+
+<div *ngFor="let n of names">
+
+<h2>{{n}}</h2>
+
+</div>
+
+
